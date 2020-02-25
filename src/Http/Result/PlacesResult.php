@@ -33,6 +33,7 @@ use Biscolab\GoogleMaps\Object\ReviewCollection;
  * @method int getPriceLevel()
  * @method float getRating()
  * @method array getPlusCode()
+ * @method int getUserRatingsTotal()
  * @since   0.5.0
  */
 class PlacesResult extends GoogleMapsResult
@@ -134,6 +135,11 @@ class PlacesResult extends GoogleMapsResult
 	protected $adr_address = '';
 
 	/**
+	 * @var int
+	 */
+	protected $user_ratings_total = 0;
+
+	/**
 	 * @var array
 	 */
 	protected $typeCheck = [
@@ -158,6 +164,7 @@ class PlacesResult extends GoogleMapsResult
 		GoogleMapsResultFields::INTERNATIONAL_PHONE_NUMBER => 'string',
 		GoogleMapsResultFields::FORMATTED_PHONE_NUMBER     => 'string',
 		GoogleMapsResultFields::ADR_ADDRESS                => 'string',
+		GoogleMapsResultFields::USER_RATINGS_TOTAL         => 'int',
 	];
 
 	/**

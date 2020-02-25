@@ -175,4 +175,8 @@ class GoogleMapsResultFields
 	 */
 	const ADR_ADDRESS = 'adr_address';
 
+	/**
+	 * @var string user_ratings_total
+	 */
+	const USER_RATINGS_TOTAL = 'user_ratings_total';
 }
